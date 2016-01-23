@@ -1,0 +1,195 @@
+body, html{
+overflow-x:hidden;
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 20, 2016, 8:49:47 PM
+    Author     : thomaskofiannan1
+*/
+.overlay {  
+	    background:transparent;
+	    text-align:center;
+	    opacity:100%;
+	    width:100%;height:100%; 
+	    -webkit-transition: all 5s ease-out;
+	    -moz-transition: all 5s ease-out;
+	    -o-transition: all 5s ease-out;
+	    -ms-transition: all 5s ease-out;
+	    transition: all 5s ease-out;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		transform: translateX(100%);
+		-webkit-animation: anim over 5s;
+		animation: overlay anim 5s;
+		display:block;
+
+	}
+#main-content{
+    background-color: #ffffff;
+    padding: 40px 40px 80px 40px;
+
+}
+/*row one 
+*/
+#row-1{
+    width: 100%;
+    height: 100px;
+    border: 2px solid #393438;
+
+    margin-bottom: 15px;
+}
+#orange{
+    width: 100%;
+    background-color: #f15e20;
+    height: 100%;
+}
+#row-2{
+    height: 125px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top:15px;
+z-index: 10;
+}
+#red{
+    display: inline-block;
+    width: 128px;
+    background-color: red;
+    height: 100%;
+}
+#blue{
+    display: inline-block;
+    background-color: #4db2e1;
+    height: 95%;
+    margin-top: 10px;
+    width: 850px;
+    margin-left: 10px;
+	position: relative;
+}
+
+#black{
+    display: inline-block;
+    background-color: black;
+    height: 100%;
+    width: 128px;
+    margin-left: 10px;
+}
+
+
+#voilet{
+    background-color: #7f0eb7;
+    height: 410px;
+    width: 125px;
+    margin-left: 270px;
+    margin-top: 120px;
+    position: absolute;
+}
+#row-3{
+    width: 100%;
+    height: 125px;
+    margin-top:15px;
+    clear: both;
+}
+#green{
+    background-color: #28a341;
+    height: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#row-4{
+    height: 100px;
+    margin-top:15px;
+    border: 2px solid #393438;
+}
+#yellow{
+    background-color: #eae35d;
+    height: 100%;
+	position: relative;
+
+}#row-5{
+    height: 126px;
+    margin-top:15px;
+}
+#grey{
+    display: inline-block;
+    background-color: #8f8e91;
+    height: 100%;
+    width: 180px;
+    margin-left: 80px;
+}
+#pink{
+    display: inline-block;
+    background-color: #f415be;
+    height: 100%;
+    width: 775px;
+    margin-left: 140px;
+}
+
+body {
+    position: relative; /* needed for the overlay to extend when you scroll */
+    /* general styles */
+   
+    font-family: 'Open Sans', sans-serif;
+  
+}
+
+
+/* just some content with arbitrary styles for explanation purposes */
+.modal {
+    padding: 20px;
+    width: 600px;
+    height: 300px;
+    position: fixed;
+    top: 20%; 
+    left: 20%;
+    text-justify: inherit;
+    margin-bottom: -100px;
+    background-color: #f0f4f4;
+    border-radius: 5px;
+    text-align: justify;
+    z-index: 15; /* 1px higher than the overlay layer */
+}
+.modal h2{
+    font-weight:normal;
+}
+
+#slide {
+ 
+}
+@-webkit-keyframes anim {
+  0% {
+    -webkit-transform: translateX(0%);
+	-webkit-opacity: 1;
+  }
+  20.28% {
+    -webkit-transform: translateX(40%);
+  }
+  60.71% {
+    -webkit-transform: translateX(90%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+	-webkit-opacity: 0.25;
+  }
+}
+@keyframes anim {
+  0% {
+    transform: translateX(0%);
+	opacity: 1;
+  }
+  20.28% {
+    transform: translateX(40%);
+  }
+  60.71% {
+    transform: translateX(90%);
+  }
+  100% {
+    transform: translateX(10%);
+	opacity: 0.25;
+  }
+}
